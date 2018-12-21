@@ -24,7 +24,6 @@ trigger_map:
 app:
   envs:
     - XCODEBUILD_PROJECT: ./CarlensCollectionViewLayout.xcodeproj
-    - XCODEBUILD_OPTIONS: ''
 
 # Workflow declarations
 
@@ -33,10 +32,18 @@ workflows:
   # Top level build workflows
 
   build:
+    envs:
+      - XCODEBUILD_SCHEME: CarlensCollectionViewLayout
+    before_run:
+      - build-scheme
+    after_run:
+      - deploy-artifacts
+
+  build-scheme:
     steps:
       - script:
           inputs:
-            - content: xcodebuild -project $XCODEBUILD_PROJECT
+            - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
 
   # Deploy workflows
 
