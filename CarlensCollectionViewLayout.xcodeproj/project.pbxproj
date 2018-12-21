@@ -275,7 +275,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.CarlensCollectionViewLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarlensCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.CarlensCollectionViewLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarlensCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
