@@ -1,6 +1,5 @@
 ### Ticket
-<!-- Link to specific ticket in your issue tracking system. -->
- 
+[CRAI-](https://netguru.atlassian.net/browse/CRAI-)
  
 ### Task Description
 <!-- What should and what actually happens. -->
