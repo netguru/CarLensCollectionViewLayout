@@ -1,0 +1,55 @@
+#
+# bitrise.yml
+#
+# Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+#
+
+# CLI metadata
+
+format_version: 1.3.1
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+# Workflow trigger map
+
+trigger_map:
+
+  - pull_request_target_branch: develop
+    workflow: build
+
+  - push_branch: develop
+    workflow: build
+
+# Environment configuration
+
+app:
+  envs:
+    - XCODEBUILD_PROJECT: ./CarlensCollectionViewLayout.xcodeproj
+
+# Workflow declarations
+
+workflows:
+
+  # Top level build workflows
+
+  build:
+    envs:
+      - XCODEBUILD_SCHEME: CarlensCollectionViewLayout
+    before_run:
+      - build-scheme
+    after_run:
+      - deploy-artifacts
+
+  build-scheme:
+    steps:
+      - script:
+          inputs:
+            - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
+
+  # Deploy workflows
+
+  deploy-artifacts:
+    steps:
+      - deploy-to-bitrise-io:
+          inputs:
+            - notify_user_groups: none
+            - is_enable_public_page: false
