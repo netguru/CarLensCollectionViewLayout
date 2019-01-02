@@ -10,6 +10,7 @@
 		9505725E21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725D21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift */; };
 		9505726021D4D922009EA422 /* CarlensLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725F21D4D922009EA422 /* CarlensLayoutAttributes.swift */; };
 		955E4FD421CBFB2800B4C3BB /* CarlensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958D17C021D66DF00067BED6 /* CarlensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		955E4FCF21CBFB2800B4C3BB /* CarlensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarlensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarlensCollectionViewLayout.h; sourceTree = "<group>"; };
 		955E4FD321CBFB2800B4C3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarlensCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */,
 				9505725D21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift */,
+				958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */,
 				9505725F21D4D922009EA422 /* CarlensLayoutAttributes.swift */,
 				955E4FD321CBFB2800B4C3BB /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9505725E21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift in Sources */,
+				958D17C021D66DF00067BED6 /* CarlensCollectionViewCell.swift in Sources */,
 				9505726021D4D922009EA422 /* CarlensLayoutAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
