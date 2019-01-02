@@ -9,7 +9,7 @@ import UIKit.UICollectionView
 open class CarlensCollectionViewCell: UICollectionViewCell {
     
     /// Indicates if the cell is currently displayed as primary cell
-    var isCurrentlyPrimary = false
+    public var isCurrentlyPrimary = false
     
     private let topViewHeight: CGFloat = UIScreen.main.bounds.height > 568 ? 200 : 170
     
