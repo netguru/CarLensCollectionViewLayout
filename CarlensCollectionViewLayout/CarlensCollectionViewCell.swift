@@ -24,6 +24,7 @@ open class CarlensCollectionViewCell: UICollectionViewCell {
     }
     
     private func animateViews(toProgress progress: Double) {
+        guard cardView != nil else { return }
         let offset = topViewHeight - (CGFloat(progress) * topViewHeight)
         cardView.transform = .init(translationX: 0, y: -offset)
     }
