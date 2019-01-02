@@ -14,6 +14,7 @@ public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
     
     private let spacingBetweenElements = 20
     
+    /// SeeAlso: UICollectionViewFlowLayout
     public override func prepare() {
         super.prepare()
         guard !firstSetupDone else { return }
@@ -44,7 +45,6 @@ public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
     /// SeeAlso: UICollectionViewFlowLayout
     public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let collectionView = collectionView, let allAttributes = super.layoutAttributesForElements(in: rect) else { return nil }
-        
         for attributes in allAttributes {
             let collectionCenter = collectionView.bounds.size.width / 2
             let offset = collectionView.contentOffset.x
