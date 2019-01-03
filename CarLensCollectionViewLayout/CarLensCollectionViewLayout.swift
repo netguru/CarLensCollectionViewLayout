@@ -2,7 +2,6 @@
 //  CarLensCollectionViewLayout.swift
 //  CarLensCollectionViewLayout
 //
-//  Created by Anna on 27/12/2018.
 //  Copyright © 2018 Netguru. All rights reserved.
 //
 
