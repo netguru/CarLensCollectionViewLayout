@@ -12,8 +12,6 @@ public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
     
     private var firstSetupDone = false
     
-    private let spacingBetweenElements = 20
-    
     /// SeeAlso: UICollectionViewFlowLayout
     public override func prepare() {
         super.prepare()
