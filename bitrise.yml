@@ -23,7 +23,7 @@ trigger_map:
 
 app:
   envs:
-    - XCODEBUILD_PROJECT: ./CarlensCollectionViewLayout.xcodeproj
+    - XCODEBUILD_PROJECT: ./CarLensCollectionViewLayout.xcodeproj
 
 # Workflow declarations
 
@@ -33,7 +33,7 @@ workflows:
 
   build:
     envs:
-      - XCODEBUILD_SCHEME: CarlensCollectionViewLayout
+      - XCODEBUILD_SCHEME: CarLensCollectionViewLayout
     before_run:
       - build-scheme
     after_run:
