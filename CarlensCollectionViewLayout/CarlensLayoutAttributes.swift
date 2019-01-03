@@ -13,15 +13,15 @@ final class CarlensLayoutAttributes: UICollectionViewLayoutAttributes {
     
     /// SeeAlso: UICollectionViewLayoutAttributes
     override func copy(with zone: NSZone?) -> Any {
-        guard let attributes = super.copy(with: zone) as? CarlensLayoutAttributes else { return super.copy(with: zone) }
-        attributes.progress = progress
+        let attributes = super.copy(with: zone)
+        (attributes as? CarlensLayoutAttributes)?.progress = progress
         return attributes
     }
     
     /// SeeAlso: UICollectionViewLayoutAttributes
     override func isEqual(_ object: Any?) -> Bool {
-        guard let attributes = object as? CarlensLayoutAttributes else { return false }
-        guard attributes.progress == progress else { return false }
+        guard let attributes = object as? CarlensLayoutAttributes,
+            attributes.progress == progress else { return false }
         return super.isEqual(object)
     }
 }
