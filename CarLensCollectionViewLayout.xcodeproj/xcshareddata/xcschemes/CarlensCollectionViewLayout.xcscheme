@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "955E4FCE21CBFB2800B4C3BB"
-               BuildableName = "CarlensCollectionViewLayout.framework"
-               BlueprintName = "CarlensCollectionViewLayout"
-               ReferencedContainer = "container:CarlensCollectionViewLayout.xcodeproj">
+               BuildableName = "CarLensCollectionViewLayout.framework"
+               BlueprintName = "CarLensCollectionViewLayout"
+               ReferencedContainer = "container:CarLensCollectionViewLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "955E4FCE21CBFB2800B4C3BB"
-            BuildableName = "CarlensCollectionViewLayout.framework"
-            BlueprintName = "CarlensCollectionViewLayout"
-            ReferencedContainer = "container:CarlensCollectionViewLayout.xcodeproj">
+            BuildableName = "CarLensCollectionViewLayout.framework"
+            BlueprintName = "CarLensCollectionViewLayout"
+            ReferencedContainer = "container:CarLensCollectionViewLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "955E4FCE21CBFB2800B4C3BB"
-            BuildableName = "CarlensCollectionViewLayout.framework"
-            BlueprintName = "CarlensCollectionViewLayout"
-            ReferencedContainer = "container:CarlensCollectionViewLayout.xcodeproj">
+            BuildableName = "CarLensCollectionViewLayout.framework"
+            BlueprintName = "CarLensCollectionViewLayout"
+            ReferencedContainer = "container:CarLensCollectionViewLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

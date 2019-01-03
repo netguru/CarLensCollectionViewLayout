@@ -1,6 +1,6 @@
 //
-//  CarlensCollectionViewLayout.h
-//  CarlensCollectionViewLayout
+//  CarLensCollectionViewLayout.h
+//  CarLensCollectionViewLayout
 //
 //  Created by Anna on 20/12/2018.
 //  Copyright © 2018 Netguru. All rights reserved.

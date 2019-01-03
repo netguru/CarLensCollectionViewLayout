@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9505725E21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725D21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift */; };
-		9505726021D4D922009EA422 /* CarlensLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725F21D4D922009EA422 /* CarlensLayoutAttributes.swift */; };
-		955E4FD421CBFB2800B4C3BB /* CarlensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		958D17C021D66DF00067BED6 /* CarlensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */; };
+		9505725E21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */; };
+		9505726021D4D922009EA422 /* CarLensLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */; };
+		955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9505725D21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarlensCollectionViewLayout.swift; sourceTree = "<group>"; };
-		9505725F21D4D922009EA422 /* CarlensLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarlensLayoutAttributes.swift; sourceTree = "<group>"; };
-		955E4FCF21CBFB2800B4C3BB /* CarlensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarlensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarlensCollectionViewLayout.h; sourceTree = "<group>"; };
+		9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensLayoutAttributes.swift; sourceTree = "<group>"; };
+		955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarLensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarLensCollectionViewLayout.h; sourceTree = "<group>"; };
 		955E4FD321CBFB2800B4C3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarlensCollectionViewCell.swift; sourceTree = "<group>"; };
+		958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 		955E4FC521CBFB2800B4C3BB = {
 			isa = PBXGroup;
 			children = (
-				955E4FD121CBFB2800B4C3BB /* CarlensCollectionViewLayout */,
+				955E4FD121CBFB2800B4C3BB /* CarLensCollectionViewLayout */,
 				955E4FD021CBFB2800B4C3BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +44,21 @@
 		955E4FD021CBFB2800B4C3BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				955E4FCF21CBFB2800B4C3BB /* CarlensCollectionViewLayout.framework */,
+				955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		955E4FD121CBFB2800B4C3BB /* CarlensCollectionViewLayout */ = {
+		955E4FD121CBFB2800B4C3BB /* CarLensCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				955E4FD221CBFB2800B4C3BB /* CarlensCollectionViewLayout.h */,
-				9505725D21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift */,
-				958D17BF21D66DF00067BED6 /* CarlensCollectionViewCell.swift */,
-				9505725F21D4D922009EA422 /* CarlensLayoutAttributes.swift */,
+				955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */,
+				9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */,
+				958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */,
+				9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */,
 				955E4FD321CBFB2800B4C3BB /* Info.plist */,
 			);
-			path = CarlensCollectionViewLayout;
+			path = CarLensCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,16 +68,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955E4FD421CBFB2800B4C3BB /* CarlensCollectionViewLayout.h in Headers */,
+				955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		955E4FCE21CBFB2800B4C3BB /* CarlensCollectionViewLayout */ = {
+		955E4FCE21CBFB2800B4C3BB /* CarLensCollectionViewLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarlensCollectionViewLayout" */;
+			buildConfigurationList = 955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayout" */;
 			buildPhases = (
 				955E4FCA21CBFB2800B4C3BB /* Headers */,
 				955E4FCB21CBFB2800B4C3BB /* Sources */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = CarlensCollectionViewLayout;
+			name = CarLensCollectionViewLayout;
 			productName = CarlensCollectionViewLayout;
-			productReference = 955E4FCF21CBFB2800B4C3BB /* CarlensCollectionViewLayout.framework */;
+			productReference = 955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarlensCollectionViewLayout" */;
+			buildConfigurationList = 955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarLensCollectionViewLayout" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				955E4FCE21CBFB2800B4C3BB /* CarlensCollectionViewLayout */,
+				955E4FCE21CBFB2800B4C3BB /* CarLensCollectionViewLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -139,9 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9505725E21D4D8FB009EA422 /* CarlensCollectionViewLayout.swift in Sources */,
-				958D17C021D66DF00067BED6 /* CarlensCollectionViewCell.swift in Sources */,
-				9505726021D4D922009EA422 /* CarlensLayoutAttributes.swift in Sources */,
+				9505725E21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift in Sources */,
+				958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */,
+				9505726021D4D922009EA422 /* CarLensLayoutAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +287,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarlensCollectionViewLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -313,7 +313,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarlensCollectionViewLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarlensCollectionViewLayout" */ = {
+		955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarLensCollectionViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				955E4FD521CBFB2800B4C3BB /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarlensCollectionViewLayout" */ = {
+		955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				955E4FD821CBFB2800B4C3BB /* Debug */,

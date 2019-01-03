@@ -1,12 +1,14 @@
 //
-//  CarListCollectionViewCell.swift
-//  CarRecognition
+//  CarLensCollectionViewCell.swift
+//  CarLensCollectionViewCell
+//
+//  Copyright © 2018 Netguru. All rights reserved.
 //
 
 
 import UIKit.UICollectionView
 
-open class CarlensCollectionViewCell: UICollectionViewCell {
+open class CarLensCollectionViewCell: UICollectionViewCell {
     
     /// Indicates if the cell is currently displayed as primary cell.
     public var isCurrentlyPrimary = false
@@ -52,7 +54,7 @@ open class CarlensCollectionViewCell: UICollectionViewCell {
     /// - SeeAlso: UICollectionViewCell
     override open func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
-        guard let attributes = layoutAttributes as? CarlensLayoutAttributes else { return }
+        guard let attributes = layoutAttributes as? CarLensLayoutAttributes else { return }
         isCurrentlyPrimary = !(attributes.progress == 0)
         animateViews(toProgress: attributes.progress)
     }

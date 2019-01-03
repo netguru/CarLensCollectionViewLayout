@@ -1,14 +1,13 @@
 //
-//  CarlensCollectionViewLayout.swift
-//  CarlensCollectionViewLayout
+//  CarLensCollectionViewLayout.swift
+//  CarLensCollectionViewLayout
 //
-//  Created by Anna on 27/12/2018.
 //  Copyright © 2018 Netguru. All rights reserved.
 //
 
 import UIKit
 
-public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
+public final class CarLensCollectionViewLayout: UICollectionViewFlowLayout {
     
     private var firstSetupDone = false
     
@@ -37,7 +36,7 @@ public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
     
     /// SeeAlso: UICollectionViewFlowLayout
     override public class var layoutAttributesClass: AnyClass {
-        return CarlensLayoutAttributes.self
+        return CarLensLayoutAttributes.self
     }
     
     /// SeeAlso: UICollectionViewFlowLayout
@@ -53,7 +52,7 @@ public final class CarlensCollectionViewLayout: UICollectionViewFlowLayout {
             let ratio = (maxDistance - abs(distanceFromCenter)) / maxDistance
             let normalizedRatio = min(1, max(0, ratio))
             
-            guard let attributes = attributes as? CarlensLayoutAttributes else { continue }
+            guard let attributes = attributes as? CarLensLayoutAttributes else { continue }
             attributes.progress = Double(normalizedRatio)
         }
         return allAttributes

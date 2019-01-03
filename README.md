@@ -1,4 +1,4 @@
-# CarlensCollectionViewLayout
+# CarLensCollectionViewLayout
 
 The beautiful animation of collection view cells.
 
@@ -34,6 +34,6 @@ The beautiful animation of collection view cells.
 
 ## Related repositories
 
-- [Carlens iOS](https://github.com/netguru/car-recognition-ios)
-- [Carlens Android](https://github.com/netguru/car-recognition-android)
-- [Carlens Machine Learning](https://github.com/netguru/car-recognition-ml)
+- [CarLens iOS](https://github.com/netguru/car-recognition-ios)
+- [CarLens Android](https://github.com/netguru/car-recognition-android)
+- [CarLens Machine Learning](https://github.com/netguru/car-recognition-ml)
