@@ -51,7 +51,8 @@ workflows:
       - script:
           title: cocoapods-lint
           inputs:
-            - content: pod lib lint
+            # -- allow-warnings should be removed once repository is public
+            - content: pod lib lint --allow-warnings
 
   # Deploy workflows
 
