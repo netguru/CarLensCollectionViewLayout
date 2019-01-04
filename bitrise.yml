@@ -36,6 +36,7 @@ workflows:
       - XCODEBUILD_SCHEME: CarLensCollectionViewLayout
     before_run:
       - build-scheme
+      - cocoapods-test
     after_run:
       - deploy-artifacts
 
@@ -44,6 +45,14 @@ workflows:
       - script:
           inputs:
             - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
+
+  cocoapods-test:
+    steps:
+      - script:
+          title: cocoapods-lint
+          inputs:
+            # -- allow-warnings should be removed once repository is public
+            - content: pod lib lint --allow-warnings
 
   # Deploy workflows
 
