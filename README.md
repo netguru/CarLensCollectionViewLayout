@@ -1,39 +1,65 @@
 # CarLensCollectionViewLayout
 
-The beautiful animation of collection view cells.
+![](https://img.shields.io/badge/swift-4.2-orange.svg)
+![](https://img.shields.io/badge/cocoapods-compatible-green.svg)
+![](https://app.bitrise.io/app/23a07b63b3f55f97/status.svg?token=Rt_2gKUavbR8LQ7PVuTbYg&branch=master)
 
-## Team
+An easy to use Collection View Layout for card-like animation 🎉
 
-* [Julia Wolszczak](mailto:julia.wolszczak@netguru.co) - Project Manager
-* [Anna-Mariia Shkarlinska](mailto:anna-mariia.shkarlinska@netguru.co) - iOS Developer
+That's what you can do with **CarLensCollectionViewLayout**: 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" 	width="250">
+</p>
 
-## Tools & Services
+*CarLensCollectionViewLayout* was created out of the implementation in [**CarLens** application 🚘](https://github.com/netguru/car-recognition-ios). The image above exactly shows the screen from the app! 
 
-* Tools:
-	* Xcode 10.1 with latest iOS stable SDK (12.0) and Swift 4.2
-* Services:
-	* [JIRA](https://netguru.atlassian.net/secure/RapidBoard.jspa?rapidView=584&view=detail)
-	* [Bitrise](https://app.bitrise.io/app/8f268362f4edaa0d)
+## Requirements
 
-## Coding guidelines
+*CarLensCollectionViewLayout* is written in **Swift 4.2** and supports **iOS 9.0+**.
 
-- Respect Swift [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
-- The code must be readable and self-explanatory - full variable names, meaningful methods, etc.
-- Don't leave any commented-out code.
-- Write documentation for every method and property accessible outside the class. For example well documented method looks as follows:
 
-	```swift
-	/// Tells the magician to perform a given trick.
-	///
-	/// - Parameter trick: The magic trick to perform.
-	/// - Returns: Whether the magician succeeded in performing the magic trick.
-	func perform(magicTrick trick: MagicTrick) -> Bool {
-		// body
+## Usage
+
+The two main steps are needed for the configuration of *CarLensCollectionViewLayout*:
+
+### Step 1
+Assign `CarLensCollectionViewLayout` to yours collection view layout.
+```swift
+collectionView.collectionViewLayout = CarLensCollectionViewLayout()
+```
+### Step 2
+Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` right on the start!
+```swift
+class CarListCollectionViewCell: CarLensCollectionViewCell {
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		configure(topView: upperView, cardView: bottomView)
 	}
-	```
+}
+```
+## Installation
 
-## Related repositories
+### CocoaPods
 
+If you're using [CocoaPods](http://cocoapods.org), add the following dependency to your `Podfile`:
+
+```none
+pod 'CarLensCollectionViewLayout'
+```
+
+## About
+
+This project is made with ❤️ by [Netguru](https://netguru.co).
+
+### License
+
+*CarLensCollectionViewLayout* is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for more info.
+
+## Related links
+
+- [CarLens Page](https://www.netguru.com/carlens)
 - [CarLens iOS](https://github.com/netguru/car-recognition-ios)
+- [CarLens in App Store](https://itunes.apple.com/us/app/carlens/id1417168518?mt=8)
 - [CarLens Android](https://github.com/netguru/car-recognition-android)
-- [CarLens Machine Learning](https://github.com/netguru/car-recognition-ml)
+- [CarLens on Google Play](https://play.google.com/store/apps/details?id=co.netguru.android.carrecognition&hl=en)
+- [CarLens Story on a Blog](https://www.netguru.com/blog/machine-learning-and-augmented-reality-combined-in-one-sleek-mobile-app-how-we-built-car-lens)
