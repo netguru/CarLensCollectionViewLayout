@@ -13,9 +13,10 @@
 		9518381E21E4F04400BEA6EB /* CarLensCollectionViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9518383121E4F09900BEA6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9518382721E4F08300BEA6EB /* Main.storyboard */; };
 		9518383321E4F0B500BEA6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */; };
-		9518383721E4F31C00BEA6EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382321E4F08300BEA6EB /* ViewController.swift */; };
+		9518383721E4F31C00BEA6EB /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382321E4F08300BEA6EB /* CollectionViewController.swift */; };
 		9518383821E4F31F00BEA6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9518382421E4F08300BEA6EB /* Assets.xcassets */; };
 		9518383921E4F32800BEA6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382921E4F08300BEA6EB /* AppDelegate.swift */; };
+		9518383C21E4FFCA00BEA6EB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */; };
 		955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -48,12 +49,13 @@
 		9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewLayout.swift; sourceTree = "<group>"; };
 		9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensLayoutAttributes.swift; sourceTree = "<group>"; };
 		9518380B21E4F00000BEA6EB /* CarLensCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarLensCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9518382321E4F08300BEA6EB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9518382321E4F08300BEA6EB /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		9518382421E4F08300BEA6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9518382621E4F08300BEA6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9518382821E4F08300BEA6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9518382921E4F08300BEA6EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9518382A21E4F08300BEA6EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarLensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarLensCollectionViewLayout.h; sourceTree = "<group>"; };
 		955E4FD321CBFB2800B4C3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +84,8 @@
 		9518382221E4F08300BEA6EB /* CarLensCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9518382321E4F08300BEA6EB /* ViewController.swift */,
+				9518382321E4F08300BEA6EB /* CollectionViewController.swift */,
+				9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */,
 				9518382421E4F08300BEA6EB /* Assets.xcassets */,
 				9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */,
 				9518382721E4F08300BEA6EB /* Main.storyboard */,
@@ -236,7 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9518383921E4F32800BEA6EB /* AppDelegate.swift in Sources */,
-				9518383721E4F31C00BEA6EB /* ViewController.swift in Sources */,
+				9518383721E4F31C00BEA6EB /* CollectionViewController.swift in Sources */,
+				9518383C21E4FFCA00BEA6EB /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
