@@ -84,15 +84,23 @@
 		9518382221E4F08300BEA6EB /* CarLensCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9518382921E4F08300BEA6EB /* AppDelegate.swift */,
 				9518382321E4F08300BEA6EB /* CollectionViewController.swift */,
 				9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */,
+				9518384121E5166100BEA6EB /* Supporting files */,
+			);
+			path = CarLensCollectionViewDemo;
+			sourceTree = "<group>";
+		};
+		9518384121E5166100BEA6EB /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				9518382421E4F08300BEA6EB /* Assets.xcassets */,
 				9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */,
 				9518382721E4F08300BEA6EB /* Main.storyboard */,
-				9518382921E4F08300BEA6EB /* AppDelegate.swift */,
 				9518382A21E4F08300BEA6EB /* Info.plist */,
 			);
-			path = CarLensCollectionViewDemo;
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		955E4FC521CBFB2800B4C3BB = {
@@ -291,7 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewDemo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewDemo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
