@@ -18,10 +18,15 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
+    }
+    
+    private func setupView() {
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .lightGray
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
+        collectionView.showsHorizontalScrollIndicator = false
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,5 +39,5 @@ class CollectionViewController: UICollectionViewController {
         }
         return cell
     }
-}
 
+}

@@ -11,17 +11,21 @@ import CarLensCollectionViewLayout
 
 class CollectionViewCell: CarLensCollectionViewCell {
     
-    var upperView: UIView = {
-        var view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.red
-        return view
+    private var upperView: UILabel = {
+        var label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .boldSystemFont(ofSize: 60)
+        label.textAlignment = .center
+        label.textColor = .white
+        label.text = "CarLens"
+        return label
     }()
     
-    var bottomView: UIView = {
+    private var bottomView: UIView = {
         var view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.blue
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
         return view
     }()
     
