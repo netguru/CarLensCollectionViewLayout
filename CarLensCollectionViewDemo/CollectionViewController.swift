@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  Example
+//  CollectionViewController.swift
+//  CarLensCollectionViewDemo
 //
 //  Created by Anna on 08/01/2019.
 //  Copyright © 2019 Netguru. All rights reserved.
@@ -22,10 +22,8 @@ class CollectionViewController: UICollectionViewController {
     }
     
     private func setupView() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
         collectionView.backgroundColor = .lightGray
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
+        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
         collectionView.showsHorizontalScrollIndicator = false
     }
 
@@ -34,7 +32,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as? CollectionViewCell else {
             return UICollectionViewCell()
         }
         return cell

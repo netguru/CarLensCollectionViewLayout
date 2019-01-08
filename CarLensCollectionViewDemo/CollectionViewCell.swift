@@ -6,10 +6,12 @@
 //  Copyright © 2019 Netguru. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CarLensCollectionViewLayout
 
 class CollectionViewCell: CarLensCollectionViewCell {
+    
+    static let identifier = "CollectionViewCell"
     
     private var upperView: UILabel = {
         var label = UILabel()

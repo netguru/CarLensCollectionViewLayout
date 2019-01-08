@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Example
+//  CarLensCollectionViewDemo
 //
 //  Created by Anna on 08/01/2019.
 //  Copyright © 2019 Netguru. All rights reserved.
