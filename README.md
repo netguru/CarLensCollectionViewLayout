@@ -2,11 +2,11 @@
 
 ![](https://img.shields.io/badge/swift-4.2-orange.svg)
 ![](https://img.shields.io/badge/cocoapods-compatible-green.svg)
+![](https://img.shields.io/badge/carthage-compatible-green.svg)
 ![](https://app.bitrise.io/app/23a07b63b3f55f97/status.svg?token=Rt_2gKUavbR8LQ7PVuTbYg&branch=master)
 
 An easy to use Collection View Layout for card-like animation 🎉
 
-That's what you can do with **CarLensCollectionViewLayout**: 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" width="250">
 </p>
@@ -51,7 +51,16 @@ The sample implementation is available in [Demo](CarLensCollectionViewDemo) proj
 If you're using [CocoaPods](http://cocoapods.org), add the following dependency to your `Podfile`:
 
 ```none
-pod 'CarLensCollectionViewLayout'
+use_frameworks!
+pod 'CarLensCollectionViewLayout', '~> 1.0.0'
+```
+
+### Carthage
+
+If you're using [Carthage](https://github.com/Carthage/Carthage), add the following dependency to your `Cartfile`:
+
+```none
+github "netguru/CarLensCollectionViewLayout" ~> 1.0.0
 ```
 
 ## About
