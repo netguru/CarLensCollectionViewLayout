@@ -34,17 +34,27 @@ workflows:
   build:
     envs:
       - XCODEBUILD_SCHEME: CarLensCollectionViewLayout
+      - XCODEBUILD_SCHEME_DEMO: CarLensCollectionViewLayoutDemo
     before_run:
-      - build-scheme
+      - build-lib
+      - build-demo
       - cocoapods-test
     after_run:
       - deploy-artifacts
 
-  build-scheme:
+  build-lib:
     steps:
       - script:
+          title: build-lib
           inputs:
             - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
+
+  build-demo:
+    steps:
+      - script:
+          title: build-demo
+          inputs:
+            - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME_DEMO -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
 
   cocoapods-test:
     steps:
