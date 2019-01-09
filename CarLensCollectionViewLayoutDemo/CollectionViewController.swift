@@ -11,11 +11,6 @@ import CarLensCollectionViewLayout
 
 class CollectionViewController: UICollectionViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        collectionView.collectionViewLayout = CarLensCollectionViewLayout()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -25,6 +20,7 @@ class CollectionViewController: UICollectionViewController {
         collectionView.backgroundColor = .lightGray
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.collectionViewLayout = CarLensCollectionViewLayout()
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
