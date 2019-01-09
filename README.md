@@ -8,7 +8,7 @@ An easy to use Collection View Layout for card-like animation 🎉
 
 That's what you can do with **CarLensCollectionViewLayout**: 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" 	width="250">
+	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" width="250">
 </p>
 
 *CarLensCollectionViewLayout* was created out of the implementation in [**CarLens** application 🚘](https://github.com/netguru/car-recognition-ios). The image above exactly shows the screen from the app! 
@@ -23,20 +23,27 @@ That's what you can do with **CarLensCollectionViewLayout**:
 The two main steps are needed for the configuration of *CarLensCollectionViewLayout*:
 
 ### Step 1
-Assign `CarLensCollectionViewLayout` to yours collection view layout.
+Assign `CarLensCollectionViewLayout` to yours collection view layout:
 ```swift
 collectionView.collectionViewLayout = CarLensCollectionViewLayout()
 ```
+or initialize your collection view with `CarLensCollectionViewLayout`:
+```swift
+UICollectionView(frame: .zero, collectionViewLayout: CarLensCollectionViewLayout())
+```
+
 ### Step 2
 Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` right on the start!
 ```swift
-class CarListCollectionViewCell: CarLensCollectionViewCell {
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		configure(topView: upperView, cardView: bottomView)
-	}
+class CollectionViewCell: CarLensCollectionViewCell {
+    override init(frame: CGRect) {
+	super.init(frame: frame)
+	configure(topView: upperView, cardView: bottomView)
+    }
 }
 ```
+The sample implementation is available in [Demo](CarLensCollectionViewDemo) project.
+
 ## Installation
 
 ### CocoaPods
