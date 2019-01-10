@@ -1,0 +1,74 @@
+#
+# bitrise.yml
+#
+# Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+#
+
+# CLI metadata
+
+format_version: 1.3.1
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+# Workflow trigger map
+
+trigger_map:
+
+  - pull_request_target_branch: develop
+    workflow: build
+
+  - push_branch: develop
+    workflow: build
+
+# Environment configuration
+
+app:
+  envs:
+    - XCODEBUILD_PROJECT: ./CarLensCollectionViewLayout.xcodeproj
+
+# Workflow declarations
+
+workflows:
+
+  # Top level build workflows
+
+  build:
+    envs:
+      - XCODEBUILD_SCHEME: CarLensCollectionViewLayout
+      - XCODEBUILD_SCHEME_DEMO: CarLensCollectionViewLayoutDemo
+    before_run:
+      - build-lib
+      - build-demo
+      - cocoapods-test
+    after_run:
+      - deploy-artifacts
+
+  build-lib:
+    steps:
+      - script:
+          title: build-lib
+          inputs:
+            - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
+
+  build-demo:
+    steps:
+      - script:
+          title: build-demo
+          inputs:
+            - content: xcodebuild -project $XCODEBUILD_PROJECT -scheme $XCODEBUILD_SCHEME_DEMO -destination 'platform=iOS Simulator,name=iPhone 7 Plus'
+
+  cocoapods-test:
+    steps:
+      - script:
+          title: cocoapods-lint
+          inputs:
+            # -- allow-warnings should be removed once repository is public
+            - content: pod lib lint --allow-warnings
+
+  # Deploy workflows
+
+  deploy-artifacts:
+    steps:
+      - deploy-to-bitrise-io:
+          inputs:
+            - notify_user_groups: none
+            - is_enable_public_page: false

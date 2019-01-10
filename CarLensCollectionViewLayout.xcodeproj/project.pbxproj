@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9505725E21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */; };
+		9505726021D4D922009EA422 /* CarLensLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */; };
+		9518381D21E4F04400BEA6EB /* CarLensCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */; };
+		9518381E21E4F04400BEA6EB /* CarLensCollectionViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9518383121E4F09900BEA6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9518382721E4F08300BEA6EB /* Main.storyboard */; };
+		9518383321E4F0B500BEA6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */; };
+		9518383721E4F31C00BEA6EB /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382321E4F08300BEA6EB /* CollectionViewController.swift */; };
+		9518383821E4F31F00BEA6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9518382421E4F08300BEA6EB /* Assets.xcassets */; };
+		9518383921E4F32800BEA6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382921E4F08300BEA6EB /* AppDelegate.swift */; };
+		9518383C21E4FFCA00BEA6EB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */; };
+		955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9518383521E4F16700BEA6EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 955E4FC621CBFB2800B4C3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 955E4FCE21CBFB2800B4C3BB;
+			remoteInfo = CarLensCollectionViewLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9518382121E4F04400BEA6EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9518381E21E4F04400BEA6EB /* CarLensCollectionViewLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensLayoutAttributes.swift; sourceTree = "<group>"; };
+		9518380B21E4F00000BEA6EB /* CarLensCollectionViewLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarLensCollectionViewLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9518382321E4F08300BEA6EB /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9518382421E4F08300BEA6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9518382621E4F08300BEA6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9518382821E4F08300BEA6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9518382921E4F08300BEA6EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9518382A21E4F08300BEA6EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarLensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarLensCollectionViewLayout.h; sourceTree = "<group>"; };
+		955E4FD321CBFB2800B4C3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9518380821E4F00000BEA6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9518381D21E4F04400BEA6EB /* CarLensCollectionViewLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955E4FCC21CBFB2800B4C3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9518382221E4F08300BEA6EB /* CarLensCollectionViewLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9518382921E4F08300BEA6EB /* AppDelegate.swift */,
+				9518382321E4F08300BEA6EB /* CollectionViewController.swift */,
+				9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */,
+				9518384121E5166100BEA6EB /* Supporting files */,
+			);
+			path = CarLensCollectionViewLayoutDemo;
+			sourceTree = "<group>";
+		};
+		9518384121E5166100BEA6EB /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9518382421E4F08300BEA6EB /* Assets.xcassets */,
+				9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */,
+				9518382721E4F08300BEA6EB /* Main.storyboard */,
+				9518382A21E4F08300BEA6EB /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		955E4FC521CBFB2800B4C3BB = {
+			isa = PBXGroup;
+			children = (
+				9518382221E4F08300BEA6EB /* CarLensCollectionViewLayoutDemo */,
+				955E4FD121CBFB2800B4C3BB /* CarLensCollectionViewLayout */,
+				955E4FD021CBFB2800B4C3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		955E4FD021CBFB2800B4C3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */,
+				9518380B21E4F00000BEA6EB /* CarLensCollectionViewLayoutDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		955E4FD121CBFB2800B4C3BB /* CarLensCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */,
+				9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */,
+				958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */,
+				9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */,
+				955E4FD321CBFB2800B4C3BB /* Info.plist */,
+			);
+			path = CarLensCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		955E4FCA21CBFB2800B4C3BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9518380A21E4F00000BEA6EB /* CarLensCollectionViewLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9518381A21E4F00200BEA6EB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayoutDemo" */;
+			buildPhases = (
+				9518380721E4F00000BEA6EB /* Sources */,
+				9518380821E4F00000BEA6EB /* Frameworks */,
+				9518380921E4F00000BEA6EB /* Resources */,
+				9518382121E4F04400BEA6EB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9518383621E4F16700BEA6EB /* PBXTargetDependency */,
+			);
+			name = CarLensCollectionViewLayoutDemo;
+			productName = Example;
+			productReference = 9518380B21E4F00000BEA6EB /* CarLensCollectionViewLayoutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		955E4FCE21CBFB2800B4C3BB /* CarLensCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayout" */;
+			buildPhases = (
+				955E4FCA21CBFB2800B4C3BB /* Headers */,
+				955E4FCB21CBFB2800B4C3BB /* Sources */,
+				955E4FCC21CBFB2800B4C3BB /* Frameworks */,
+				955E4FCD21CBFB2800B4C3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarLensCollectionViewLayout;
+			productName = CarlensCollectionViewLayout;
+			productReference = 955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		955E4FC621CBFB2800B4C3BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Netguru;
+				TargetAttributes = {
+					9518380A21E4F00000BEA6EB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					955E4FCE21CBFB2800B4C3BB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarLensCollectionViewLayout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 955E4FC521CBFB2800B4C3BB;
+			productRefGroup = 955E4FD021CBFB2800B4C3BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				955E4FCE21CBFB2800B4C3BB /* CarLensCollectionViewLayout */,
+				9518380A21E4F00000BEA6EB /* CarLensCollectionViewLayoutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9518380921E4F00000BEA6EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9518383321E4F0B500BEA6EB /* LaunchScreen.storyboard in Resources */,
+				9518383821E4F31F00BEA6EB /* Assets.xcassets in Resources */,
+				9518383121E4F09900BEA6EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955E4FCD21CBFB2800B4C3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9518380721E4F00000BEA6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9518383921E4F32800BEA6EB /* AppDelegate.swift in Sources */,
+				9518383721E4F31C00BEA6EB /* CollectionViewController.swift in Sources */,
+				9518383C21E4FFCA00BEA6EB /* CollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955E4FCB21CBFB2800B4C3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9505725E21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift in Sources */,
+				958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */,
+				9505726021D4D922009EA422 /* CarLensLayoutAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9518383621E4F16700BEA6EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 955E4FCE21CBFB2800B4C3BB /* CarLensCollectionViewLayout */;
+			targetProxy = 9518383521E4F16700BEA6EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9518382521E4F08300BEA6EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9518382621E4F08300BEA6EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9518382721E4F08300BEA6EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9518382821E4F08300BEA6EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9518381B21E4F00200BEA6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewLayoutDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayoutDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9518381C21E4F00200BEA6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/CarLensCollectionViewLayoutDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayoutDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		955E4FD521CBFB2800B4C3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		955E4FD621CBFB2800B4C3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		955E4FD821CBFB2800B4C3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CarlensCollectionViewLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayout;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		955E4FD921CBFB2800B4C3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CarlensCollectionViewLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.lib.CarLensCollectionViewLayout;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9518381A21E4F00200BEA6EB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9518381B21E4F00200BEA6EB /* Debug */,
+				9518381C21E4F00200BEA6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955E4FC921CBFB2800B4C3BB /* Build configuration list for PBXProject "CarLensCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955E4FD521CBFB2800B4C3BB /* Debug */,
+				955E4FD621CBFB2800B4C3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955E4FD721CBFB2800B4C3BB /* Build configuration list for PBXNativeTarget "CarLensCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955E4FD821CBFB2800B4C3BB /* Debug */,
+				955E4FD921CBFB2800B4C3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 955E4FC621CBFB2800B4C3BB /* Project object */;
+}
