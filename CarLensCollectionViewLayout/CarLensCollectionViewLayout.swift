@@ -11,6 +11,8 @@ public final class CarLensCollectionViewLayout: UICollectionViewFlowLayout {
     
     private var firstSetupDone = false
     
+    private let options: CarLensCollectionViewLayoutOptions
+    
     /// SeeAlso: UICollectionViewFlowLayout
     public override func prepare() {
         super.prepare()
@@ -19,14 +21,30 @@ public final class CarLensCollectionViewLayout: UICollectionViewFlowLayout {
         firstSetupDone = true
     }
     
+    
+    /// The initialization of the CarLensCollectionViewLayout.
+    ///
+    /// - Parameters:
+    ///   - options: An optional additional configuration of the layout.
+    public init(options: CarLensCollectionViewLayoutOptions = CarLensCollectionViewLayoutOptions()) {
+        self.options = options
+        super.init()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        self.options = CarLensCollectionViewLayoutOptions()
+        super.init(coder: aDecoder)
+    }
+    
     private func setup() {
         guard let collectionView = collectionView else { return }
         scrollDirection = .horizontal
-        minimumLineSpacing = 20
-        itemSize = CGSize(width: collectionView.bounds.width - 80, height: collectionView.bounds.height)
-        let inset = (collectionView.bounds.width - itemSize.width) / 2
-        collectionView.contentInset = .init(top: 0, left: inset, bottom: 0, right: inset)
-        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+        minimumLineSpacing = options.minimumSpacing
+        itemSize = CGSize(width: collectionView.bounds.width - 60, height: collectionView.bounds.height)
+        let sidesInset = (collectionView.bounds.width - itemSize.width) / 2
+        collectionView.contentInset =  .init(top: 0, left: sidesInset, bottom: 0, right: sidesInset)
+        collectionView.decelerationRate = options.decelerationRate
+        collectionView.showsHorizontalScrollIndicator = options.shouldShowScrollIndicator
     }
     
     /// SeeAlso: UICollectionViewFlowLayout
