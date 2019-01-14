@@ -5,7 +5,7 @@
 //  Copyright © 2019 Netguru. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// The optional configuration of CarLensCollectionViewLayout. Use this if you need to customize `CarLensCollectionViewLayout`.
 public struct CarLensCollectionViewLayoutOptions {
