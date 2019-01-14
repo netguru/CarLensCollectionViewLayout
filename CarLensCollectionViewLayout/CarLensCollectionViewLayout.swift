@@ -40,9 +40,10 @@ public final class CarLensCollectionViewLayout: UICollectionViewFlowLayout {
         guard let collectionView = collectionView else { return }
         scrollDirection = .horizontal
         minimumLineSpacing = options.minimumSpacing
-        itemSize = CGSize(width: collectionView.bounds.width - 60, height: collectionView.bounds.height)
+        itemSize = options.itemSize ?? CGSize(width: collectionView.bounds.width - 60, height: collectionView.bounds.height)
         let sidesInset = (collectionView.bounds.width - itemSize.width) / 2
-        collectionView.contentInset =  .init(top: 0, left: sidesInset, bottom: 0, right: sidesInset)
+        let topAndBottomInset = (collectionView.bounds.height - itemSize.height) / 2
+        collectionView.contentInset = .init(top: topAndBottomInset, left: sidesInset, bottom: topAndBottomInset, right: sidesInset)
         collectionView.decelerationRate = options.decelerationRate
         collectionView.showsHorizontalScrollIndicator = options.shouldShowScrollIndicator
     }
