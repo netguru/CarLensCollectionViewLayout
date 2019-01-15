@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/carthage-compatible-green.svg)
 ![](https://app.bitrise.io/app/23a07b63b3f55f97/status.svg?token=Rt_2gKUavbR8LQ7PVuTbYg&branch=master)
 
-An easy to use Collection View Layout for card-like animation 🎉
+An easy-to-use Collection View Layout for card-like animation 🎉
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" width="250">
@@ -42,7 +42,7 @@ class CollectionViewCell: CarLensCollectionViewCell {
     }
 }
 ```
-The sample implementation is available in [Demo](CarLensCollectionViewDemo) project.
+The sample implementation is available in [Demo](CarLensCollectionViewLayoutDemo) project.
 
 ## Installation
 
