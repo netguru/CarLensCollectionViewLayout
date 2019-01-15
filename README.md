@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/carthage-compatible-green.svg)
 ![](https://app.bitrise.io/app/23a07b63b3f55f97/status.svg?token=Rt_2gKUavbR8LQ7PVuTbYg&branch=master)
 
-An easy to use Collection View Layout for card-like animation 🎉
+An easy-to-use Collection View Layout for card-like animation 🎉
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/18245585/50694808-2b795e80-103b-11e9-839d-f2d8dc533bb4.gif" width="250">
@@ -20,9 +20,11 @@ An easy to use Collection View Layout for card-like animation 🎉
 
 ## Usage
 
+### Basic Usage
+
 The two main steps are needed for the configuration of *CarLensCollectionViewLayout*:
 
-### Step 1
+#### Step 1
 Assign `CarLensCollectionViewLayout` to yours collection view layout:
 ```swift
 collectionView.collectionViewLayout = CarLensCollectionViewLayout()
@@ -32,7 +34,7 @@ or initialize your collection view with `CarLensCollectionViewLayout`:
 UICollectionView(frame: .zero, collectionViewLayout: CarLensCollectionViewLayout())
 ```
 
-### Step 2
+#### Step 2
 Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` right on the start!
 ```swift
 class CollectionViewCell: CarLensCollectionViewCell {
@@ -42,7 +44,41 @@ class CollectionViewCell: CarLensCollectionViewCell {
     }
 }
 ```
-The sample implementation is available in [Demo](CarLensCollectionViewDemo) project.
+The sample implementation is available in [Demo](CarLensCollectionViewLayoutDemo) project.
+
+### Customization
+
+#### Layout
+You can also initialize `CarLensCollectionViewLayout` with a `CarLensCollectionViewLayoutOptions` object by passing any of the parameters available. Others will be configured automatically.
+
+**Parameters:**
+
+`minimumSpacing` - A minimum spacing between cells.
+
+`decelerationRate` - A deceleration for a scroll view.
+
+`shouldShowScrollIndicator` - A value indicating whether collection view should have a scroll indicator.
+
+`itemSize` - The size to use for cells.
+
+Example:
+```swift
+let options = CarLensCollectionViewLayoutOptions(minimumSpacing: 40)
+collectionView.collectionViewLayout = CarLensCollectionViewLayout(options: options)
+```
+
+#### Cell
+While subsclassing `CarLensCollectionViewCell` you can call `configure(...)` with an additional parameter `topViewHeight`. The card view height will be calculated based on this value.
+
+Example:
+```swift
+class CollectionViewCell: CarLensCollectionViewCell {
+    override init(frame: CGRect) {
+	super.init(frame: frame)
+	configure(topView: upperView, cardView: bottomView, topViewHeight: 300)
+    }
+}
+```
 
 ## Installation
 
@@ -52,7 +88,7 @@ If you're using [CocoaPods](http://cocoapods.org), add the following dependency 
 
 ```none
 use_frameworks!
-pod 'CarLensCollectionViewLayout', '~> 1.0.0'
+pod 'CarLensCollectionViewLayout', '~> 1.1.0'
 ```
 
 ### Carthage
@@ -60,7 +96,7 @@ pod 'CarLensCollectionViewLayout', '~> 1.0.0'
 If you're using [Carthage](https://github.com/Carthage/Carthage), add the following dependency to your `Cartfile`:
 
 ```none
-github "netguru/CarLensCollectionViewLayout" ~> 1.0.0
+github "netguru/CarLensCollectionViewLayout" ~> 1.1.0
 ```
 
 ## About

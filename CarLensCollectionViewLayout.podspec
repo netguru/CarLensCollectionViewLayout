@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "CarLensCollectionViewLayout"
-  s.version       = "1.0.0"
+  s.version       = "1.1.0"
   s.summary       = "An easy to use Collection View Layout for card-like animation."
 
   s.homepage      = "https://github.com/netguru/CarLensCollectionViewLayout"

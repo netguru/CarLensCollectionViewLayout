@@ -17,6 +17,7 @@
 		9518383821E4F31F00BEA6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9518382421E4F08300BEA6EB /* Assets.xcassets */; };
 		9518383921E4F32800BEA6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518382921E4F08300BEA6EB /* AppDelegate.swift */; };
 		9518383C21E4FFCA00BEA6EB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */; };
+		9518384821E623E800BEA6EB /* CarLensCollectionViewLayoutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518384721E623E800BEA6EB /* CarLensCollectionViewLayoutOptions.swift */; };
 		955E4FD421CBFB2800B4C3BB /* CarLensCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		9518382921E4F08300BEA6EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9518382A21E4F08300BEA6EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9518383B21E4FFCA00BEA6EB /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9518384721E623E800BEA6EB /* CarLensCollectionViewLayoutOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLensCollectionViewLayoutOptions.swift; sourceTree = "<group>"; };
 		955E4FCF21CBFB2800B4C3BB /* CarLensCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarLensCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarLensCollectionViewLayout.h; sourceTree = "<group>"; };
 		955E4FD321CBFB2800B4C3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				955E4FD221CBFB2800B4C3BB /* CarLensCollectionViewLayout.h */,
 				9505725D21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift */,
+				9518384721E623E800BEA6EB /* CarLensCollectionViewLayoutOptions.swift */,
 				958D17BF21D66DF00067BED6 /* CarLensCollectionViewCell.swift */,
 				9505725F21D4D922009EA422 /* CarLensLayoutAttributes.swift */,
 				955E4FD321CBFB2800B4C3BB /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9518384821E623E800BEA6EB /* CarLensCollectionViewLayoutOptions.swift in Sources */,
 				9505725E21D4D8FB009EA422 /* CarLensCollectionViewLayout.swift in Sources */,
 				958D17C021D66DF00067BED6 /* CarLensCollectionViewCell.swift in Sources */,
 				9505726021D4D922009EA422 /* CarLensLayoutAttributes.swift in Sources */,
