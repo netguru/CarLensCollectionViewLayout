@@ -19,14 +19,17 @@ open class CarLensCollectionViewCell: UICollectionViewCell {
     /// The bottom view of the cell.
     public var cardView: UIView!
 
-    private let topViewHeight: CGFloat = UIScreen.main.bounds.height > 568 ? 200 : 170
+    /// The height of the top view.
+    public var topViewHeight: CGFloat!
     
     /// Configuration of the cell. Must be called on a start.
     ///
     /// - Parameters:
     ///   - topView: The upper view of the cell.
     ///   - cardView: The bottom view of the cell.
-    open func configure(topView: UIView, cardView: UIView) {
+    ///   - topViewHeight: An optional parameter to specify the custom height of the top view. The default value is `170` or `200` depending on a device's size.
+    open func configure(topView: UIView, cardView: UIView, topViewHeight: CGFloat = UIScreen.main.bounds.height > 568 ? 200 : 170) {
+        self.topViewHeight = topViewHeight
         self.topView = topView
         self.cardView = cardView
         setupView()
