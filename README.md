@@ -20,9 +20,11 @@ An easy-to-use Collection View Layout for card-like animation 🎉
 
 ## Usage
 
+### Basic Usage
+
 The two main steps are needed for the configuration of *CarLensCollectionViewLayout*:
 
-### Step 1
+#### Step 1
 Assign `CarLensCollectionViewLayout` to yours collection view layout:
 ```swift
 collectionView.collectionViewLayout = CarLensCollectionViewLayout()
@@ -32,7 +34,7 @@ or initialize your collection view with `CarLensCollectionViewLayout`:
 UICollectionView(frame: .zero, collectionViewLayout: CarLensCollectionViewLayout())
 ```
 
-### Step 2
+#### Step 2
 Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` right on the start!
 ```swift
 class CollectionViewCell: CarLensCollectionViewCell {
@@ -43,6 +45,40 @@ class CollectionViewCell: CarLensCollectionViewCell {
 }
 ```
 The sample implementation is available in [Demo](CarLensCollectionViewLayoutDemo) project.
+
+### Customization
+
+#### Layout
+You can also initialize `CarLensCollectionViewLayout` with a `CarLensCollectionViewLayoutOptions` object by passing any of the parameters available. Others will be configured automatically.
+
+**Parameters:**
+
+`minimumSpacing` - A minimum spacing between cells.
+
+`decelerationRate` - A deceleration for a scroll view.
+
+`shouldShowScrollIndicator` - A value indicating whether collection view should have a scroll indicator.
+
+`itemSize` - The size to use for cells.
+
+Example:
+```swift
+let options = CarLensCollectionViewLayoutOptions(minimumSpacing: 40)
+collectionView.collectionViewLayout = CarLensCollectionViewLayout(options: options)
+```
+
+#### Cell
+While subsclassing `CarLensCollectionViewCell` you can call `configure(...)` with an additional parameter `topViewHeight`. The card view height will be calculated based on this value.
+
+Example:
+```swift
+class CollectionViewCell: CarLensCollectionViewCell {
+    override init(frame: CGRect) {
+	super.init(frame: frame)
+	configure(topView: upperView, cardView: bottomView, topViewHeight: 300)
+    }
+}
+```
 
 ## Installation
 
