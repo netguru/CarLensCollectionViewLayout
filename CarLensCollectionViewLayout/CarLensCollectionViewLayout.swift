@@ -54,7 +54,7 @@ public final class CarLensCollectionViewLayout: UICollectionViewFlowLayout {
     }
     
     /// SeeAlso: UICollectionViewFlowLayout
-    override public class var layoutAttributesClass: AnyClass {
+    public override class var layoutAttributesClass: AnyClass {
         return CarLensLayoutAttributes.self
     }
     

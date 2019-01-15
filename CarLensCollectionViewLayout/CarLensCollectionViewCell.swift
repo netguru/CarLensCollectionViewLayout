@@ -55,7 +55,7 @@ open class CarLensCollectionViewCell: UICollectionViewCell {
     }
     
     /// - SeeAlso: UICollectionViewCell
-    override open func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+    open override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
         guard let attributes = layoutAttributes as? CarLensLayoutAttributes else { return }
         isCurrentlyPrimary = !(attributes.progress == 0)
