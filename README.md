@@ -79,6 +79,10 @@ class CollectionViewCell: CarLensCollectionViewCell {
     }
 }
 ```
+<p align="center">
+<img src="https://user-images.githubusercontent.com/18245585/51251539-dd991a80-1999-11e9-8c60-702310ad4dc4.gif" height="500">	<img src="https://user-images.githubusercontent.com/18245585/51251540-dd991a80-1999-11e9-83f3-432357d7aa22.gif" height="500">
+	<img src="https://user-images.githubusercontent.com/18245585/51251541-de31b100-1999-11e9-9e49-07a3cf5d425b.gif" height="500">
+</p>
 
 ## Installation
 
