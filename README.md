@@ -88,7 +88,7 @@ If you're using [CocoaPods](http://cocoapods.org), add the following dependency 
 
 ```none
 use_frameworks!
-pod 'CarLensCollectionViewLayout', '~> 1.1.0'
+pod 'CarLensCollectionViewLayout', '~> 1.2.0'
 ```
 
 ### Carthage
@@ -96,7 +96,7 @@ pod 'CarLensCollectionViewLayout', '~> 1.1.0'
 If you're using [Carthage](https://github.com/Carthage/Carthage), add the following dependency to your `Cartfile`:
 
 ```none
-github "netguru/CarLensCollectionViewLayout" ~> 1.1.0
+github "netguru/CarLensCollectionViewLayout" ~> 1.2.0
 ```
 
 ## About
