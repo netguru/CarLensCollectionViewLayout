@@ -35,7 +35,7 @@ UICollectionView(frame: .zero, collectionViewLayout: CarLensCollectionViewLayout
 ```
 
 #### Step 2
-Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` right on the start!
+Subsclass `CarLensCollectionViewCell` and call `configure(topView: UIView, cardView: UIView)` during the cell’s initialization:
 ```swift
 class CollectionViewCell: CarLensCollectionViewCell {
     override init(frame: CGRect) {
@@ -101,17 +101,21 @@ github "netguru/CarLensCollectionViewLayout" ~> 1.1.0
 
 ## About
 
-This project is made with ❤️ by [Netguru](https://netguru.co).
+This project is made with ❤️ by [Netguru](https://netguru.co) and maintained by [Anna-Mariia Shkarlinska](https://github.com/anyashka).
 
 ### License
 
 *CarLensCollectionViewLayout* is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for more info.
 
+## Read More
+
+- [Introducing CarLensCollectionViewLayout - a New Open Source iOS Tool by Netguru](https://www.netguru.com/codestories/introducing-carlenscollectionviewlayout-a-new-open-source-ios-tool-by-netguru)
+- [How We Built CarLens](https://www.netguru.com/blog/machine-learning-and-augmented-reality-combined-in-one-sleek-mobile-app-how-we-built-car-lens)
+
 ## Related links
 
 - [CarLens Page](https://www.netguru.com/carlens)
-- [CarLens iOS](https://github.com/netguru/car-recognition-ios)
+- [CarLens iOS](https://github.com/netguru/CarLens-iOS)
 - [CarLens in App Store](https://itunes.apple.com/us/app/carlens/id1417168518?mt=8)
-- [CarLens Android](https://github.com/netguru/car-recognition-android)
+- [CarLens Android](https://github.com/netguru/CarLens-Android)
 - [CarLens on Google Play](https://play.google.com/store/apps/details?id=co.netguru.android.carrecognition&hl=en)
-- [CarLens Story on a Blog](https://www.netguru.com/blog/machine-learning-and-augmented-reality-combined-in-one-sleek-mobile-app-how-we-built-car-lens)
