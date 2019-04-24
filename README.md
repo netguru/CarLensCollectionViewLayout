@@ -115,6 +115,7 @@ This project is made with ❤️ by [Netguru](https://netguru.co) and maintained
 
 - [Introducing CarLensCollectionViewLayout - a New Open Source iOS Tool by Netguru](https://www.netguru.com/codestories/introducing-carlenscollectionviewlayout-a-new-open-source-ios-tool-by-netguru)
 - [How We Built CarLens](https://www.netguru.com/blog/machine-learning-and-augmented-reality-combined-in-one-sleek-mobile-app-how-we-built-car-lens)
+- [Increasing the Accuracy of the Machine Learning Model in CarLens](https://www.netguru.com/blog/improving-machine-learning-model-carlens-case-study)
 
 ## Related Links
 
